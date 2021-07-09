@@ -1,0 +1,155 @@
+*,
+::before, 
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: rgba(18, 18, 18, 0.9);
+    --red: #ee022b;
+    --lightred: rgba(255, 0, 0, 0.7);
+    --white: #ffffff;
+    --grey: #727273;
+    --lightgrey: #f1f1f1;
+    --margin-side: 160px;
+    --transition-duration: 0.5s;
+}
+
+html {
+    font-family: "Raleway", sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    font-family: "Maven Pro", "sans-serif";
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ---------- Buttons ---------  */
+.red-button {
+    display: inline-block;
+    width: 10rem;
+    height: 2.8rem;
+    border-radius: 18px;
+    background-color: var(--red);
+    color: var(--white);
+    text-align: center;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/*--------------------------------------------------
+		Header Topbar
+--------------------------------------------------- */
+
+.header-topbar {
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem var(--margin-side);
+    position: fixed;
+    width: 100%;
+}
+
+.header-topbar h1 {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    flex: 1 0 auto;
+}
+
+.header-topbar h1::first-letter {
+    font-size: 3rem;
+    color: var(--red);
+}
+
+.header-topbar-menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.header-topbar-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-topbar-menu li {
+    margin-left: 1.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.header-topbar-menu a {
+    display: inline-block;
+    color: var(--white);
+    text-align: center;
+    border-radius: 18px;
+    width: 125px;
+    height: 40px;
+    line-height: 2.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.header-topbar-menu a:hover {
+    background-color: var(--lightred);
+}
+
+/*--------------------------------------------------
+		Header Banner
+--------------------------------------------------- */
+.header-banner {
+    background: url("../images/burger-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10vh var(--margin-side);
+}
+
+.header-banner h2::before {
+    content: "The one and only\A";
+    white-space: pre;
+    color: var(--white);
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.header-banner h2 {
+    font-family: "Raleway", "Montserrat", sans-serif;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 5.6rem;
+    margin-top: 15px;
+}
+
+.header-banner-price {
+    font-family: "Maven Pro", sans-serif;
+    color: var(--grey);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 15px;
+}
+
+.header-banner-description {
+    color: var(--white);
+    font-size: 1rem;
+    margin: 15px 0 30px 0;
+    width: 50%;
+}
+
