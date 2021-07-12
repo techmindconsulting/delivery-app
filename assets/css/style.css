@@ -34,6 +34,20 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+section h2 {
+    text-align: center;
+}
+
 /* ---------- Buttons ---------  */
 .red-button {
     display: inline-block;
@@ -175,13 +189,6 @@ a {
 
 /* About us */
 
-#about-us h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin: 1rem 0;
-    text-transform: uppercase;
-}
-
 .container {
     width: 80%;
     display: flex;
@@ -212,3 +219,32 @@ a {
     height: 500px;
 }
 
+/** Recommanded Today **/
+#products {
+    text-align: center;
+}
+
+.product {
+    flex: 1 0 30%;
+}
+
+.product p {
+    margin: 1.5rem 6rem; 
+}
+
+.product-price {
+    font-weight: bold;
+    color: var(--red);
+    font-size: 1.8rem;
+} 
+
+footer {
+    background-color: var(--black);
+    text-align: center;
+    color: white;
+    padding: 3rem 0;
+}
+
+footer p {
+    padding: 1rem 0;
+}
