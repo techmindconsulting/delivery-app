@@ -238,6 +238,89 @@ section h2 {
     font-size: 1.8rem;
 } 
 
+
+/* Contact us */
+
+.contact-us {
+    padding-top: 2rem;
+}
+
+.contact {
+    flex-basis: 50%;
+}
+
+.contact h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.form-contact {
+    font-family: "Maven Pro", "sans-serif";
+    font-size: 1rem;
+    padding: 2.5rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group label::after {
+    content:"*";
+}
+
+.form-group:nth-child(1), 
+.form-group:nth-child(2) {
+    width: 45%;
+}
+
+.form-group:nth-child(3), 
+.form-group:nth-child(4),
+.form-group:nth-child(5) {
+    width: 100%;
+}
+
+.form-group .form-control {
+    width: 100%;
+    border-radius: 1rem;
+    border: 2px solid var(--red);
+    margin: 0.8rem 3.5rem 0.5rem 0;
+}
+
+.form-group input {
+    height: 2rem;
+    outline: none;
+    padding: 1rem;
+}
+
+input[type="submit"] {
+    background-color: var(--red);
+    width: 100%;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: none;
+    height: 3.2rem;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--lightred);
+}
+
+.form-group textarea {
+    outline: none;
+    height: 8rem;
+    padding: 1rem;
+}
+
+
+/* Footer */
+
 footer {
     background-color: var(--black);
     text-align: center;
